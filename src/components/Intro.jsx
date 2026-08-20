@@ -1,4 +1,5 @@
 import { theme } from '../theme';
+import { LinkedinIcon } from '../icons';
 
 export default function Intro() {
   return (
@@ -7,8 +8,26 @@ export default function Intro() {
       gap: '40px', padding: '10vh 6vw', minHeight: '88vh', width: '100%', flexWrap: 'wrap',
     }}>
       <div className="intro-copy" style={{ flex: 1, minWidth: 300, animation: 'fadeUp 1s ease both' }}>
-        <h1 style={{ fontFamily: theme.fontDisplay, fontWeight: 900, fontSize: 'clamp(2.6rem, 5.5vw, 4.2rem)', margin: '12px 0' }}>
-          Adem Trabelsi
+        <h1 style={{ display: 'flex', alignItems: 'center', gap: '14px', flexWrap: 'wrap', fontFamily: theme.fontDisplay, fontWeight: 900, fontSize: 'clamp(2.6rem, 5.5vw, 4.2rem)', margin: '12px 0' }}>
+          <span>Adem Trabelsi</span>
+          <a
+            href="https://www.linkedin.com/in/trabelsiadem27"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Visit Adem Trabelsi on LinkedIn"
+            title="LinkedIn"
+            style={{ display: 'inline-flex', color: theme.muted, transition: 'color .25s, transform .25s' }}
+            onMouseEnter={e => {
+              e.currentTarget.style.color = theme.accent2;
+              e.currentTarget.style.transform = 'translateY(-2px)';
+            }}
+            onMouseLeave={e => {
+              e.currentTarget.style.color = theme.muted;
+              e.currentTarget.style.transform = 'translateY(0)';
+            }}
+          >
+            <LinkedinIcon />
+          </a>
         </h1>
         <h2 style={{ color: theme.muted, fontWeight: 400, fontSize: '1.15rem', marginBottom: '20px' }}>
           Software Engineering Student · AI &amp; Systems

@@ -30,9 +30,36 @@ export default function ProjectModal({ project, onClose }) {
         }}>
           <CloseIcon />
         </button>
-        <p style={{ color: theme.accent, fontSize: '0.75rem', letterSpacing: '2px', textTransform: 'uppercase', fontWeight: 600 }}>
-          Project
-        </p>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '16px' }}>
+          <p style={{ color: theme.accent, fontSize: '0.75rem', letterSpacing: '2px', textTransform: 'uppercase', fontWeight: 600 }}>
+            Project
+          </p>
+          {project.source && (
+            <a
+              className="source-button"
+              href={project.source}
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                display: 'inline-flex', alignItems: 'center', gap: '8px',
+                padding: '8px 13px', border: `1px solid ${theme.accent2}`,
+                borderRadius: '999px', color: theme.accent2,
+                fontSize: '0.75rem', fontWeight: 600,
+                transition: 'background .25s, color .25s',
+              }}
+              onMouseEnter={e => {
+                e.currentTarget.style.background = theme.accent2;
+                e.currentTarget.style.color = '#05070a';
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.background = 'transparent';
+                e.currentTarget.style.color = theme.accent2;
+              }}
+            >
+              View Source
+            </a>
+          )}
+        </div>
         <h2 style={{ fontFamily: theme.fontDisplay, fontSize: '1.8rem', margin: '10px 0 16px' }}>{project.title}</h2>
         <p style={{ color: theme.muted, marginBottom: '26px', lineHeight: 1.7 }}>{project.desc}</p>
         <h4 style={{ fontSize: '0.8rem', color: theme.ink, marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '1px' }}>

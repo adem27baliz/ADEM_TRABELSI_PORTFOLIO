@@ -23,7 +23,7 @@ export default function Footer() {
            onMouseLeave={e => e.currentTarget.style.color = theme.muted}>
           <PhoneIcon /> +216 99 153 535
         </a>
-        <a href="#" style={linkStyle}
+        <a href="https://www.linkedin.com/in/trabelsiadem27" style={linkStyle}
            onMouseEnter={e => e.currentTarget.style.color = theme.accent2}
            onMouseLeave={e => e.currentTarget.style.color = theme.muted}>
           <LinkedinIcon /> LinkedIn

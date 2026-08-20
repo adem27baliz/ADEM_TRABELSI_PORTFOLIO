@@ -17,6 +17,7 @@ const projects = [
       'Developed with the team: Edam Hbaieb, Rayan Mouri, Iyed Mdimegh, and Akrem Medimagh',
     ],
     tags: ['IoT', 'Data Engineering', 'Isolation Forest', 'CO₂ Analytics', 'Docker'],
+    
   },
   {
     title: 'AI-Powered System Monitoring Platform',
@@ -30,6 +31,7 @@ const projects = [
       'Fully Dockerized six-container pipeline designed for a future Kubernetes DaemonSet deployment',
     ],
     tags: ['Python', 'Node.js', 'NestJS', 'Kafka', 'TimescaleDB', 'React', 'Docker'],
+    source :"https://github.com/adem27baliz/monitoring_platform"
   },
  
   {
@@ -75,6 +77,7 @@ const projects = [
       'Planned smart-recommendation module',
     ],
     tags: ['Computer Vision', 'AI Platform'],
+    source : "https://github.com/FarmLink-ppp"
   },
   {
     title: 'Tunisian Real Estate Hub',
@@ -87,6 +90,7 @@ const projects = [
       
     ],
     tags: ['Data Mining', 'ML'],
+    source : "https://github.com/syrinesmati/Tunisan-Real-Estate-Price-Prediction-Platform"
   },
    {
     title: 'TaskFlow — Enterprise Task Management Platform',
@@ -99,6 +103,7 @@ const projects = [
       
     ],
     tags: ['Angular', 'Flutter', 'NestJS'],
+    source : "https://github.com/yasmine-sassi/TaskFlow-Pro-Mobile"
   },
     {
     title: 'RescueLink',
