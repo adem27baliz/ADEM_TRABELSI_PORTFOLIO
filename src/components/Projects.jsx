@@ -141,11 +141,12 @@ export default function Projects() {
           </button>
         ))}
       </div>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px,1fr))', gap: '24px' }}>
+      <div className="projects-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px,1fr))', gap: '24px' }}>
         {visibleProjects.map((p, i) => (
           <div
             key={i}
             onClick={() => setActive(p)}
+            className="project-card"
             style={{
               background: theme.card, border: `1px solid ${theme.cardBorder}`,
               borderRadius: '18px', padding: '28px', cursor: 'pointer',

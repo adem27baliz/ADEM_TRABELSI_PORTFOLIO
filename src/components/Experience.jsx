@@ -29,7 +29,7 @@ export default function Experience() {
       <h2 style={sectionTitle}>Professional Experience</h2>
       <div style={{ display: 'flex', flexDirection: 'column' }}>
         {experience.map((e, i) => (
-          <div key={i} style={{ display: 'grid', gridTemplateColumns: '110px 32px 1fr', gap: '0 12px' }}>
+          <div key={i} className="experience-item" style={{ display: 'grid', gridTemplateColumns: '110px 32px 1fr', gap: '0 12px' }}>
 
             {/* Date column */}
             <div style={{ textAlign: 'right', paddingTop: '2px', fontSize: '0.78rem', lineHeight: 1.7 }}>

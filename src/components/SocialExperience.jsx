@@ -17,7 +17,7 @@ const social = [
 
 export default function SocialExperience() {
   return (
-    <section id="social" style={sectionStyle}>
+    <section id="social experience" style={sectionStyle}>
       <h2 style={sectionTitle}>Social Experience</h2>
 
       <div
@@ -46,7 +46,7 @@ export default function SocialExperience() {
           aria-label="Lions Club logo placeholder"
         >
                   <img
-          src="/LIONS_CLUB_LOGO.png"
+          src="/ADEM_TRABELSI_PORTFOLIO/LIONS_CLUB_LOGO.png"
           alt="Lions Club logo"
           style={{ maxWidth: '110px', maxHeight: '110px', objectFit: 'contain' }}
         />

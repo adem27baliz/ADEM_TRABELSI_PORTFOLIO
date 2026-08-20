@@ -2,11 +2,11 @@ import { theme } from '../theme';
 
 export default function Intro() {
   return (
-    <section style={{
+    <section className="intro-section" style={{
       display: 'flex', justifyContent: 'space-between', alignItems: 'center',
       gap: '40px', padding: '10vh 6vw', minHeight: '88vh', width: '100%', flexWrap: 'wrap',
     }}>
-      <div style={{ flex: 1, minWidth: 300, animation: 'fadeUp 1s ease both' }}>
+      <div className="intro-copy" style={{ flex: 1, minWidth: 300, animation: 'fadeUp 1s ease both' }}>
         <h1 style={{ fontFamily: theme.fontDisplay, fontWeight: 900, fontSize: 'clamp(2.6rem, 5.5vw, 4.2rem)', margin: '12px 0' }}>
           Adem Trabelsi
         </h1>
@@ -18,7 +18,7 @@ export default function Intro() {
           models to production dashboards. Focused on shipping software that scales
           and delivers real value.
         </p>
-        <div style={{ display: 'flex', gap: '16px', marginTop: '32px', flexWrap: 'wrap' }}>
+        <div className="intro-actions" style={{ display: 'flex', gap: '16px', marginTop: '32px', flexWrap: 'wrap' }}>
           <a href="#projects" style={{
             background: theme.accent, color: '#05070a', padding: '13px 26px',
             borderRadius: '30px', fontWeight: 600, fontSize: '0.9rem', boxShadow: theme.glow,
@@ -35,7 +35,7 @@ export default function Intro() {
             Contact Me
           </a>
             <a
-            href="/Adem_Trabelsi.pdf"
+            href="/ADEM_TRABELSI_PORTFOLIO/Adem_Trabelsi.pdf"
             download
             style={{
                 border: `1px solid ${theme.accent2}`,
@@ -58,8 +58,8 @@ export default function Intro() {
             </a>
         </div>
       </div>
-      <div style={{ animation: 'floatSlow 5s ease-in-out infinite' }}>
-        <img src="/dom.jpg" alt="Adem Trabelsi" style={{
+      <div className="intro-photo" style={{ animation: 'floatSlow 5s ease-in-out infinite' }}>
+        <img src="/ADEM_TRABELSI_PORTFOLIO/dom.jpg" alt="Adem Trabelsi" style={{
           width: 300, height: 300, objectFit: 'cover', borderRadius: '24px',
           border: `2px solid ${theme.cardBorder}`, boxShadow: '0 20px 60px rgba(0,0,0,0.4)',
         }} />

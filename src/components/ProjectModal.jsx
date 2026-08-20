@@ -12,12 +12,12 @@ export default function ProjectModal({ project, onClose }) {
   if (!project) return null;
 
   return (
-    <div onClick={onClose} style={{
+    <div className="modal-overlay" onClick={onClose} style={{
       position: 'fixed', inset: 0, background: 'rgba(10,5,25,0.75)', backdropFilter: 'blur(8px)',
       display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 200, padding: '24px',
       animation: 'fadeIn .25s ease both',
     }}>
-      <div onClick={e => e.stopPropagation()} style={{
+      <div className="modal-card" onClick={e => e.stopPropagation()} style={{
         background: '#0a1628', border: `1px solid ${theme.cardBorder}`, borderRadius: '20px',
         maxWidth: 600, width: '100%', padding: '40px', position: 'relative',
         maxHeight: '85vh', overflowY: 'auto', animation: 'fadeUp .35s ease both',

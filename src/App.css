@@ -230,6 +230,117 @@ a { color: inherit; text-decoration: none; }
 .socials a:hover { color: #7fd8c4; }
 
 @media (max-width: 720px) {
+  .site-header {
+    align-items: flex-start !important;
+    flex-direction: column !important;
+    gap: 14px !important;
+    padding: 16px 5vw !important;
+  }
+
+  .site-nav {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px 16px !important;
+    width: 100%;
+    font-size: 0.75rem !important;
+  }
+
+  .intro-section {
+    align-items: flex-start !important;
+    flex-direction: column !important;
+    gap: 36px !important;
+    min-height: auto !important;
+    padding: 64px 5vw 72px !important;
+  }
+
+  .intro-copy {
+    min-width: 0 !important;
+    width: 100%;
+  }
+
+  .intro-copy h1 {
+    font-size: clamp(2.35rem, 13vw, 3.5rem) !important;
+    line-height: 1.05;
+  }
+
+  .intro-copy h2 {
+    font-size: 1rem !important;
+    line-height: 1.45;
+  }
+
+  .intro-actions {
+    gap: 10px !important;
+  }
+
+  .intro-actions a {
+    flex: 1 1 140px;
+    text-align: center;
+    padding: 11px 14px !important;
+    font-size: 0.78rem !important;
+  }
+
+  .intro-photo {
+    align-self: center;
+  }
+
+  .intro-photo img {
+    width: min(72vw, 260px) !important;
+    height: min(72vw, 260px) !important;
+  }
+
+  .section {
+    padding: 56px 5vw !important;
+  }
+
   .timeline-item { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
+
+  .experience-item {
+    grid-template-columns: 62px 20px minmax(0, 1fr) !important;
+    gap: 0 8px !important;
+  }
+
+  .experience-item > div:first-child {
+    font-size: 0.65rem !important;
+    overflow-wrap: anywhere;
+  }
+
+  .experience-item > div:nth-child(3) {
+    min-width: 0;
+    padding: 16px !important;
+  }
+
+  .projects-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 16px !important;
+  }
+
+  .project-card {
+    min-width: 0;
+    padding: 20px !important;
+  }
+
+  .project-card h3 {
+    font-size: 1.15rem !important;
+  }
+
+  .modal-overlay {
+    padding: 12px !important;
+  }
+
+  .modal-card {
+    padding: 28px 20px !important;
+    max-height: 90vh !important;
+    border-radius: 16px !important;
+  }
+
+  .modal-card h2 {
+    font-size: 1.45rem !important;
+    padding-right: 28px;
+  }
+
+  .footer {
+    padding: 48px 5vw !important;
+    align-items: flex-start !important;
+  }
 }
