@@ -5,9 +5,10 @@ const experience = [
     role: 'Mobile Application Developer', company: 'ULMUS Technologie',
     start: '06/2025', end: '02/2026', location: 'Tunis',
     points: [
-      'Designed offline-first Flutter app for cash transport management; modeled SQLite schema for data consistency.',
-      'Implemented secure bidirectional sync with automatic retry; integrated SUNMI V3 SDK for thermal printing.',
-      'Conducted field testing during cash collection rounds, validating offline sync reliability.',
+      'Built and maintained a mobile application for cash transport management, focusing on reliability in field conditions and offline-first operation.',
+      'Modeled the app around SQLite persistence and REST-based synchronization so operations continue even with intermittent connectivity.',
+      'Implemented bidirectional synchronization, error handling, and automatic retry logic to reduce data loss and recover gracefully from failed network requests.',
+      'Integrated the SUNMI V3 thermal printing SDK to support real-world operational workflows in cash collection and transport scenarios.',
     ],
     stack: ['Flutter/Dart', 'SQLite', 'REST API', 'SUNMI V3 SDK'],
   },
